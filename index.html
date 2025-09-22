@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Satysubham Panda | Web Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Header -->
+  <header class="header">
+    <nav class="container nav">
+      <a href="#home" class="logo">Satysubham.dev</a>
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button id="theme-toggle" aria-label="Toggle theme" class="theme-toggle-btn">
+        <!-- Sun icon -->
+        <svg class="sun-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+        <!-- Moon icon -->
+        <svg class="moon-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="container hero-content">
+        <div class="animate-fade-in-up">
+          <h1>Hello, I’m <span class="highlight-text">Satysubham Panda</span></h1>
+          <p class="subtitle">
+            I'm an <span id="typing" class="typing-text"></span><span class="typing-cursor"></span>
+          </p>
+          <a href="#projects" class="btn">View My Work</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+      <div class="container section-container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <p>
+                I'm a B.Tech Computer Science student with a strong passion for web development and design. My journey into the world of coding began with a curiosity for how websites work, and it has since evolved into a dedicated pursuit of creating beautiful, functional, and user-centric digital experiences.
+            </p>
+            <p>
+                I specialize in front-end technologies like HTML, CSS, JavaScript, and modern frameworks. I'm always eager to learn new things and take on challenging projects that push my skills to the next level. When I'm not coding, you can find me exploring new design trends or contributing to open-source projects.
+            </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section section-alt">
+      <div class="container section-container">
+        <h2 class="section-title">My Projects</h2>
+        <div class="project-grid">
+          <!-- Project Card 1 -->
+          <div class="project-card">
+            <h3>Personal Portfolio Website</h3>
+            <p>A responsive and interactive personal portfolio built with modern design principles to showcase my skills and projects.</p>
+          </div>
+          <!-- Project Card 2 -->
+          <div class="project-card">
+            <h3>Web Application To-Do List</h3>
+            <p>A sleek and functional task management application that helps users stay organized, with data saved to local storage.</p>
+          </div>
+          <!-- Project Card 3 -->
+          <div class="project-card">
+           <h3>Weather Dashboard</h3>
+              <p>A city-wise weather dashboard that lets users search for current conditions and forecasts, displaying temperature, humidity, and other key metrics in an interactive report format.</p>
+           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <div class="container section-container">
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="contact-subtitle">
+            I'm currently available for freelance work and open to discussing new projects. Feel free to send me a message!
+        </p>
+        <form id="contact-form" class="contact-form">
+          <div class="form-grid">
+            <input type="text" id="name" placeholder="Your Name" required class="form-input">
+            <input type="email" id="email" placeholder="Your Email" required class="form-input">
+          </div>
+          <textarea id="message" placeholder="Your Message" rows="5" required class="form-input form-textarea"></textarea>
+          <button type="submit" class="btn form-button">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+        <p>© <span id="year"></span> Satysubham Panda | All Rights Reserved</p>
+    </div>
+  </footer>
+  
+  <!-- Toast Notification -->
+  <div id="toast" class="toast">
+    Message sent successfully! 🚀
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
+
